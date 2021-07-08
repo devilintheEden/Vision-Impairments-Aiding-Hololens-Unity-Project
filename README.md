@@ -13,5 +13,5 @@ Functionality:
 
 Notice:
 
-1. pix2pix.onnx is too big for GitHub to hold without LFS so it was upload separately to the following address [Google Drive](https://drive.google.com/file/d/1mOs2hCU6nomhmbpnVqMVspuCN9S2VoLp/view). Download the file and put it under Assets folder.
+1. The two .onnx models are too big for GitHub to hold without LFS so it was upload separately to the following address [Google Drive](https://drive.google.com/file/d/1mOs2hCU6nomhmbpnVqMVspuCN9S2VoLp/view). Download the file and put it under Assets folder.
 
