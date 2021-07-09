@@ -45,8 +45,11 @@ public class WebCamDetecter : MonoBehaviour
             processedTexP2P = TextureCropTools.CropWithRect(webcamTex, new Rect(Vector2.zero, new Vector2(webcamTex.width, webcamTex.height)));
             texScalerP2P.Scale(processedTexP2P);
             runYoloModel.UpdateYOLOModel();
-            runPix2PixModel.UpdatePix2PixModel();
-            updateIndicators.UpdateCall(runYoloModel.results, runPix2PixModel.hint_position);
+            if(runYoloModel.results.Count > 0)
+            {
+                runPix2PixModel.UpdatePix2PixModel();
+                updateIndicators.UpdateCall(runYoloModel.results, runPix2PixModel.hint_position);
+            }
             time = 0;
         }
         time += Time.deltaTime;
